@@ -43,4 +43,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_optopn">OptopnActivity</string>
+    <string name="witaj_w_pla">
+Witaj w PlantCatalog! \n Naciśnij przycisk aby rozpocząć.
+</string>
 </resources>
