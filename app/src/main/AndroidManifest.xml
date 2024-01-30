@@ -13,11 +13,6 @@
         android:theme="@style/Theme.PlantCatalog"
         tools:targetApi="31">
         <activity
-            android:name=".OptopnActivity"
-            android:exported="false"
-            android:label="@string/title_activity_optopn"
-            android:theme="@style/Theme.PlantCatalog" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

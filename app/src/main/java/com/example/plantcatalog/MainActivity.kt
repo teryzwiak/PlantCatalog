@@ -1,6 +1,7 @@
 package com.example.plantcatalog
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +26,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.rozpocznij.text = "test"
+        binding.rozpocznij.setOnClickListener{
+            val intent = Intent(this, OptionActivity::class.java)
+        startActivity(intent)
+    }
 
         }
     }
