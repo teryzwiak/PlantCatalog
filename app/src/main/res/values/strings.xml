@@ -47,4 +47,7 @@
     <string name="witaj_w_pla">
 Witaj w PlantCatalog! \n Naciśnij przycisk aby rozpocząć.
 </string>
+    <string name="rozpoczni">
+ROZPOCZNIJ!
+</string>
 </resources>
