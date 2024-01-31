@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.rozpocznij.setOnClickListener{
+        binding.startButton.setOnClickListener{
             val intent = Intent(this, OptionActivity::class.java)
         startActivity(intent)
     }
