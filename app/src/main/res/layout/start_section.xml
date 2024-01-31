@@ -7,22 +7,22 @@
     android:gravity="center"
     android:background="@drawable/background_image">
     <TextView
-        android:id="@+id/witaj_w_pla"
+        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:gravity="center"
-        android:text="@string/witaj_w_pla"
+        android:text="@string/welcome"
         android:textAppearance="@style/witaj_w_pla" />
 
     <Button
-        android:id="@+id/rozpocznij"
+        android:id="@+id/start_button"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/grey"
         android:gravity="center"
-        android:text="@string/rozpoczni"
+        android:text="@string/start_button"
         android:textColor="@color/black"
         android:textSize="20sp"/>
 

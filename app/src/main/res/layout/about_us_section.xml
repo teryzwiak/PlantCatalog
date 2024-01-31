@@ -3,12 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Powrót do poprzedniej karty"
+        android:onClick="onBackPressed"
+        android:src="@drawable/back_ic" />
+
 
     <TextView
         android:id="@+id/textViewHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/O_nas"
+        android:text="@string/about_us"
         android:textSize="35sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
