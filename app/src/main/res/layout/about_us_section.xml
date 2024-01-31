@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageButton
+        android:padding="10dp"
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,7 +18,8 @@
         android:background="?android:attr/selectableItemBackground"
         android:contentDescription="Powrót do poprzedniej karty"
         android:onClick="onBackPressed"
-        android:src="@drawable/back_ic" />
+        android:src="@drawable/back_ic"
+         />
 
 
     <TextView
