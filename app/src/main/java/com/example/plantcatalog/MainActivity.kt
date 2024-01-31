@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-    private  lateinit var startButton: ActivityMainBinding
+    private lateinit var startButton: ActivityMainBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.startButton.setOnClickListener{
             val intent = Intent(this, OptionActivity::class.java)
-        startActivity(intent)
-    }
-
+            startActivity(intent)
         }
+
     }
+}
