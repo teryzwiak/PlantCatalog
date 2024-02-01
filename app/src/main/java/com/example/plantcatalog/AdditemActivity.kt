@@ -16,5 +16,13 @@ class AdditemActivity : AppCompatActivity() {
 
         binding = AddItemSectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.buttonBack.setOnClickListener {
+            onBackPressed()
+        }
         }
     }
+
+
+
+

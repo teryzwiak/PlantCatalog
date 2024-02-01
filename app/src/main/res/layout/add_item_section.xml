@@ -62,7 +62,7 @@
         android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="add_photo"
+        android:text="@string/add_photo"
         />
 
     <Button

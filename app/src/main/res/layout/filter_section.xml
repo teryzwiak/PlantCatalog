@@ -24,7 +24,6 @@
         android:layout_marginBottom="16dp"
         android:background="?android:attr/selectableItemBackground"
         android:contentDescription="@string/back_button_desc"
-        android:onClick="onBackPressed"
         android:src="@drawable/back_ic" />
 
 

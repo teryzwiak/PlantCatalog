@@ -15,5 +15,10 @@ class AboutActivity : AppCompatActivity() {
         binding = AboutUsSectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        binding.buttonBack.setOnClickListener {
+            onBackPressed()
+        }
     }
+
 }

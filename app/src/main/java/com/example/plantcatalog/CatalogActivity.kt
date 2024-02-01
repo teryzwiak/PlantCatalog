@@ -16,6 +16,8 @@ class CatalogActivity : AppCompatActivity() {
         binding = CatalogSectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        binding.buttonBack.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

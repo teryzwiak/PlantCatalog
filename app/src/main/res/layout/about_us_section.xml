@@ -17,7 +17,6 @@
         android:layout_marginBottom="16dp"
         android:background="?android:attr/selectableItemBackground"
         android:contentDescription="Powrót do poprzedniej karty"
-        android:onClick="onBackPressed"
         android:src="@drawable/back_ic"
          />
 
