@@ -19,11 +19,14 @@
     <string name="palm">Palma</string>
     <string name="add_plant">Dodaj roślinkę</string>
     <string name="lilia">Lilia</string>
-    <string name="rose">Róża</string>
+    <string name="rose">Rózą</string>
     <string name="tulip">Tulipan</string>
     <string name="save_btn">Zapisz</string>
-    <string name="plant_name">Nazwa rośliny</string>
-    <string name="plant_description">Opis</string>
-    <string name="add_photo">Dodaj zdjęcie</string>
-    <string name="save_changes_btn">Zapisz zmiany</string>
+
+
+
+
+
+
+
 </resources>
