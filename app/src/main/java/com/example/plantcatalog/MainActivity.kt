@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-    private  lateinit var startButton: ActivityMainBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

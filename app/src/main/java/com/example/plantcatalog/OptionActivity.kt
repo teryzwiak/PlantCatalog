@@ -9,6 +9,7 @@ import com.example.plantcatalog.databinding.OptionSectionBinding
 class OptionActivity : AppCompatActivity() {
 
     private lateinit var binding: OptionSectionBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -17,6 +18,11 @@ class OptionActivity : AppCompatActivity() {
 
         binding.aboutUs.setOnClickListener{
             val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.plantCategory.setOnClickListener{
+            val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
     }
