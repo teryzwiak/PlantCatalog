@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="plants_array">
+        <item>Kaktus</item>
+        <item>Palma</item>
+        <item>Lilia</item>
+        <item>Róża</item>
+        <item>Tulipan</item>
+    </string-array>
+</resources>

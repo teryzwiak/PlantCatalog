@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_add_plant"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:padding="10dp"
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/back_button_desc"
+        android:src="@drawable/back_ic"
+        />
+
+    <EditText
+        android:id="@+id/editTextPlantName"
+        android:padding="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/plant_name"
+        android:background="@color/white" />
+
+
+    <EditText
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editTextCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kraj (opcjonalnie)"
+        android:background="@color/white"/>
+
+    <Spinner
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/spinnerPlantType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/plants_array"
+        android:background="@color/white"/>
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/plant_description"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonAddPhoto"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/add_photo"
+        />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/save_changes_btn" />
+
+</LinearLayout>

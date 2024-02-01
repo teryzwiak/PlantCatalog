@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bc_add_secction"
+        android:src="@drawable/bg_add_secction"
         android:scaleType="centerCrop"/>
 
 
@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:text="KATALOG"
         android:textSize="35sp"
+        android:layout_marginStart="35dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:layout_toEndOf="@id/buttonBack"/>
@@ -68,7 +69,8 @@
         android:layout_height="500dp"
         android:layout_marginTop="120dp"
         android:layout_marginStart="185dp"
-        android:background="@android:color/darker_gray" />
+        android:background="@drawable/rounded_background_filter"
+        />
 
 
     <Button
@@ -82,55 +84,56 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/kaktus_filter"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="170dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="260dp"
         android:textSize="25sp"
         android:text="@string/kaktus"
-        ></EditText>
+        ></TextView>
 
-    <EditText
+    <TextView
         android:id="@+id/palm_filter"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="240dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="260dp"
         android:textSize="25sp"
         android:text="@string/palm"
-        ></EditText>
+        ></TextView>
 
-    <EditText
+    <TextView
         android:id="@+id/lilia_filter"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="310dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="270dp"
         android:textSize="25sp"
         android:text="@string/lilia"
-        ></EditText>
+        ></TextView>
 
-    <EditText
+    <TextView
     android:id="@+id/rose_filter"
     android:layout_width="wrap_content"
     android:layout_height="50dp"
     android:layout_marginTop="380dp"
-    android:layout_marginStart="300dp"
+    android:layout_marginStart="265dp"
     android:textSize="25sp"
     android:text="@string/rose"
-    ></EditText>
+    ></TextView>
 
-    <EditText
+    <TextView
         android:id="@+id/tulip_filter"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="450dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="255dp"
         android:textSize="25sp"
         android:text="@string/tulip"
-        ></EditText>
+        ></TextView>
+
 
 
 

@@ -34,13 +34,14 @@
         />
 
 
-    <EditText
+    <TextView
         android:id="@+id/editTextAboutUs"
         android:layout_width="wrap_content"
         android:layout_height="600dp"
         android:layout_below="@id/textViewHeader"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
+        android:textSize="19dp"
         android:hint="Witaj! Tu Patryk i Wiktor - pasjonaci natury i technologii, którzy postanowili połączyć te dwie dziedziny, tworząc aplikację, która umożliwia Ci dzielenie się i zarządzanie swoją kolekcją roślin.
                     Zapraszamy Cię do naszego wirtualnego ogrodu, gdzie możesz dodawać i edytować rośliny, które posiadasz lub które fascynują Cię swoją urodą. Nasza aplikacja umożliwia śledzenie swojej zielonej kolekcji, dzielenie się swoimi doświadczeniami ogrodniczymi oraz odkrywanie nowych gatunków roślin, które spotkasz w różnych zakątkach świata.
 Niech nasza aplikacja stanie się Twoim osobistym dziennikiem roślinnym, gdzie z łatwością dodasz informacje o swoich kwiatkach, drzewach czy ziołach. Podziel się swoimi sukcesami, ciekawostkami czy pięknymi fotografiami swoich zieleniaków z społecznością ogrodniczą.

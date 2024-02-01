@@ -11,6 +11,11 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.Toast
 import com.example.plantcatalog.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,10 +31,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.startButton.setOnClickListener{
+
+
+        binding.startButton.setOnClickListener {
             val intent = Intent(this, OptionActivity::class.java)
-        startActivity(intent)
-    }
+            startActivity(intent)}
+
 
         }
+
+
     }
+
