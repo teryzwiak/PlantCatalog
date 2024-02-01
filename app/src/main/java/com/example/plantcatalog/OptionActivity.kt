@@ -25,5 +25,10 @@ class OptionActivity : AppCompatActivity() {
             val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
+
+        binding.addPlant.setOnClickListener{
+            val intent = Intent(this, AdditemActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
