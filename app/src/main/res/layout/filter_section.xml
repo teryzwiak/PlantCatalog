@@ -31,27 +31,15 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="KATALOG"
+        android:text="@string/filter_H1"
         android:textSize="35sp"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="70dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:layout_toEndOf="@id/buttonBack"/>
 
-    <!-- Ikona filtrów -->
-    <ImageButton
-        android:padding="10dp"
-        android:id="@+id/buttonFilter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="16dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:contentDescription="Filtruj"
-        android:src="@drawable/filter_icon" />
+
+
 
 
     <LinearLayout
@@ -65,73 +53,62 @@
     <View
         android:id="@+id/rectangle"
         android:layout_width="225dp"
-        android:layout_height="500dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginStart="185dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="85dp"
         android:background="@drawable/rounded_background_filter"
         />
 
 
     <Button
-        android:id="@+id/save_button"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="520dp"
-        android:layout_marginStart="220dp"
-        android:backgroundTint="@color/gold"
-        android:text="@string/save_btn"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
-
-    <TextView
         android:id="@+id/kaktus_filter"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="170dp"
-        android:layout_marginStart="260dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="125dp"
         android:textSize="25sp"
         android:text="@string/kaktus"
-        ></TextView>
+        ></Button>
 
-    <TextView
+    <Button
         android:id="@+id/palm_filter"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginStart="260dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="125dp"
         android:textSize="25sp"
         android:text="@string/palm"
-        ></TextView>
+        ></Button>
 
-    <TextView
+    <Button
         android:id="@+id/lilia_filter"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="310dp"
-        android:layout_marginStart="270dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginStart="125dp"
         android:textSize="25sp"
         android:text="@string/lilia"
-        ></TextView>
+        ></Button>
 
-    <TextView
+    <Button
     android:id="@+id/rose_filter"
-    android:layout_width="wrap_content"
+    android:layout_width="150dp"
     android:layout_height="50dp"
-    android:layout_marginTop="380dp"
-    android:layout_marginStart="265dp"
+    android:layout_marginTop="440dp"
+    android:layout_marginStart="125dp"
     android:textSize="25sp"
     android:text="@string/rose"
-    ></TextView>
+    ></Button>
 
-    <TextView
+    <Button
         android:id="@+id/tulip_filter"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="450dp"
-        android:layout_marginStart="255dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginStart="125dp"
         android:textSize="25sp"
         android:text="@string/tulip"
-        ></TextView>
+        ></Button>
 
 
 

@@ -38,7 +38,7 @@
         android:layout_marginTop="40dp"
         android:layout_toEndOf="@id/buttonBack"/>
 
-    <!-- Ikona filtrów -->
+
     <ImageButton
         android:padding="10dp"
         android:id="@+id/buttonFilter"

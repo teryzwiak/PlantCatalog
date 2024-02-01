@@ -23,6 +23,9 @@
     <string name="tulip">Tulipan</string>
     <string name="save_btn">Zapisz</string>
     <string name="add_photo">Dodaj zdjęcie</string>
+    <string name="plant_name">Nazwa roślinki</string>
+    <string name="plant_description">Opis roślinki</string>
+    <string name="filter_H1">Filtry</string>
 
 
 

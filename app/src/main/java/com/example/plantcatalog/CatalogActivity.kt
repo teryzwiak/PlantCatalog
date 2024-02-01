@@ -18,6 +18,16 @@ class CatalogActivity : AppCompatActivity() {
 
         binding.buttonBack.setOnClickListener {
             onBackPressed()
+
+        }
+        }
+    override fun onResume() {
+        super.onResume()
+
+
+        binding.buttonFilter.setOnClickListener {
+            val intent = Intent(this, FilterActivity::class.java)
+            startActivity(intent)
         }
     }
-}
+    }
