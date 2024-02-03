@@ -1,18 +1,13 @@
 package com.example.plantcatalog
 
-import DbHandler
 import DbHelper
 import MyAdapter
+import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.plantcatalog.databinding.CatalogSectionBinding
-import com.example.plantcatalog.databinding.OptionSectionBinding
-
-private var dbHandler: DbHandler? = null
-
 
 class CatalogActivity : AppCompatActivity() {
 
@@ -28,7 +23,6 @@ class CatalogActivity : AppCompatActivity() {
 
         binding.buttonBack.setOnClickListener {
             onBackPressed()
-
         }
 
         dbHelper = DbHelper(this)
@@ -43,21 +37,19 @@ class CatalogActivity : AppCompatActivity() {
 
         // Pobierz dane z bazy SQLite i zaktualizuj adapter
         updateAdapterData()
-
-        var allData = dbHandler?.getAllData()
-        Log.d(allData.toString(), "Mess: $allData")
     }
+
     override fun onResume() {
         super.onResume()
 
-
         binding.buttonFilter.setOnClickListener {
             val intent = Intent(this, FilterActivity::class.java)
-            startActivity(intent)
+            startActivityForResult(intent, FILTER_REQUEST_CODE)
         }
     }
+
     private fun addDataToSQLite() {
-        dbHelper.addData(MyModel(1, "Tulipan", "Holandia", "Tulipan", "Description ", "URL1"))
+        dbHelper.addData(MyModel(1, "Tulipan", "Holandia", "@+id/tulip_filter", "Description ", "URL1"))
         dbHelper.addData(MyModel(2, "Róża", "Polska", "Róża", "Description 2", "URL2"))
         dbHelper.addData(MyModel(3, "Kaktus", "Etopia", "Kaktus", "Description 3", "URL3"))
     }
@@ -68,4 +60,25 @@ class CatalogActivity : AppCompatActivity() {
         adapter.notifyDataSetChanged()
     }
 
+    companion object {
+        const val FILTER_REQUEST_CODE = 100
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == FILTER_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+            val filterId = data?.getIntExtra("filterId", -1)
+            filterId?.let {
+                // Tutaj przekazujemy id przycisku do zastosowania filtra
+                val filteredArticles = dbHelper.getAllData().filter { article ->
+                    // Przekonwertuj ID przycisku na typ Long
+                    val buttonIdLong = filterId.toLong()
+                    // Porównaj ID przycisku z ID artykułów
+                    article.id == buttonIdLong
+                }
+                adapter.updateData(filteredArticles)
+                adapter.notifyDataSetChanged()
+            }
+        }
+    }
+}
