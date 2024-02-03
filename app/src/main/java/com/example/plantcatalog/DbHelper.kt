@@ -74,4 +74,20 @@ class DbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
         db.execSQL("DELETE FROM $TABLE_NAME")
         db.close()
     }
+
+    fun insertData(myModel: MyModel): Long {
+        val db = this.writableDatabase
+        val values = ContentValues()
+
+        values.put(COLUMN_NAME, myModel.name)
+        values.put(COLUMN_COUNTRY, myModel.country)
+        values.put(COLUMN_TYPE, myModel.type)
+        values.put(COLUMN_DESCRIPTION, myModel.description)
+        values.put(COLUMN_URL, myModel.url)
+
+        val id = db.insert(TABLE_NAME, null, values)
+        db.close()
+
+        return id
+    }
 }

@@ -20,6 +20,7 @@ class MyAdapter(private var dataList: List<MyModel>) : RecyclerView.Adapter<MyAd
         holder.binding.textViewCountry.text = data.country
         holder.binding.textViewType.text = data.type
         holder.binding.textViewDescription.text = data.description
+
     }
 
     override fun getItemCount(): Int {
