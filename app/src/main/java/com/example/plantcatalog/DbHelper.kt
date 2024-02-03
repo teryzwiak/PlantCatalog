@@ -68,4 +68,10 @@ class DbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
         db.close()
         return dataList
     }
+
+    fun clearAllData() {
+        val db = writableDatabase
+        db.execSQL("DELETE FROM $TABLE_NAME")
+        db.close()
+    }
 }

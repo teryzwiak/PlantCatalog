@@ -57,9 +57,9 @@ class CatalogActivity : AppCompatActivity() {
         }
     }
     private fun addDataToSQLite() {
-        dbHelper.addData(MyModel(1, "Example 1", "Country 1", "Type 1", "Description 1", "URL 1"))
-        dbHelper.addData(MyModel(2, "Example 2", "Country 2", "Type 2", "Description 2", "URL 2"))
-        dbHelper.addData(MyModel(3, "Example 3", "Country 3", "Type 3", "Description 3", "URL 3"))
+        dbHelper.addData(MyModel(1, "Tulipan", "Holandia", "Tulipan", "Description ", "URL 1"))
+        dbHelper.addData(MyModel(2, "Róża", "Polska", "Róża", "Description 2", "URL 2"))
+        dbHelper.addData(MyModel(3, "Kaktus", "Etopia", "Kaktus", "Description 3", "URL 3"))
     }
 
     private fun updateAdapterData() {
