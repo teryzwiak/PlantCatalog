@@ -1,5 +1,6 @@
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plantcatalog.MyModel
 import com.example.plantcatalog.databinding.ItemDataBinding
@@ -19,7 +20,6 @@ class MyAdapter(private var dataList: List<MyModel>) : RecyclerView.Adapter<MyAd
         holder.binding.textViewCountry.text = data.country
         holder.binding.textViewType.text = data.type
         holder.binding.textViewDescription.text = data.description
-        holder.binding.textViewUrl.text = data.url
     }
 
     override fun getItemCount(): Int {
@@ -32,3 +32,5 @@ class MyAdapter(private var dataList: List<MyModel>) : RecyclerView.Adapter<MyAd
 
     class ViewHolder(val binding: ItemDataBinding) : RecyclerView.ViewHolder(binding.root)
 }
+
+
